@@ -1,0 +1,56 @@
+*PROPERTY TABLE TYPE, NAME = "ABQ_AM.AbsorptionCoeff" , PROPERTIES = 1
+"AbsorptionCoeff", Unitless
+*PROPERTY TABLE TYPE, NAME = "ABQ_AM.EnclosureAmbientTemp" , PROPERTIES = 1
+"VATTemperature", 
+*PARAMETER TABLE TYPE, NAME = "ABQ_AM.MovingHeatSource" , PARAMETERS = 2
+STRING,,"Event Series","Laser Event Series",
+STRING,,Concentrated|Uniform|Goldak,"Energy Distribution",
+*PARAMETER TABLE TYPE, NAME = "ABQ_AM.MaterialDeposition.Advanced" , PARAMETERS = 6
+STRING,Partial,Full|Partial,"Activation Type",
+FLOAT,0.0,,"Activation Threshold",
+FLOAT,0.0,,"Max Volume Fraction Partial",
+FLOAT,0.0,,"Max Volume Fraction Full",
+STRING,,Yes|No,"Bead Orientation",
+INTEGER,0,,"Element Subdivision Order",
+*PARAMETER TABLE TYPE, NAME = "ABQ_AM.MovingHeatSource.Uniform" , PARAMETERS = 9
+INTEGER,,,"SubDivX",
+INTEGER,,,"SubDivY",
+INTEGER,,,"SubDivZ",
+FLOAT,,,"offset1",
+FLOAT,,,"offset2",
+FLOAT,,,"offset3",
+FLOAT,,,"BoxLength1",
+FLOAT,,,"BoxLength2",
+FLOAT,,,"BoxLength3",
+*PARAMETER TABLE TYPE, NAME = "ABQ_AM.MovingHeatSource.Goldak" , PARAMETERS = 10
+INTEGER,,,"SubDivX",
+INTEGER,,,"SubDivY",
+INTEGER,,,"SubDivZ",
+FLOAT,,,"a",
+FLOAT,,,"b",
+FLOAT,,,"cf",
+FLOAT,,,"cr",
+FLOAT,,,"ff",
+FLOAT,,,"fr",
+FLOAT,,,"BoxSizeFactor",
+*PARAMETER TABLE TYPE, NAME = "ABQ_AM.MovingHeatSource.Advanced" , PARAMETERS = 7
+STRING,False,True|False,"Conserve Total Energy",
+STRING,False,True|False,"Control increment size",
+STRING,Relative,Absolute|Relative,"Offset type",
+FLOAT,0.0,,"LaserVectorX",
+FLOAT,0.0,,"LaserVectorY",
+FLOAT,-1.0,,"LaserVectorZ",
+FLOAT,1.0,,"Field factor",
+*PARAMETER TABLE TYPE, NAME = "ABQ_AM.MaterialDeposition.Bead" , PARAMETERS = 5
+STRING,Z,X|Y|Z,"Stack Direction",
+FLOAT,,,"Bead Height",
+FLOAT,,,"Bead Width",
+FLOAT,,,"Activation Offset",
+STRING,,Below|Above,"Deposition Position",
+*PARAMETER TABLE TYPE, NAME = "ABQ_AM.MaterialDeposition" , PARAMETERS = 2
+STRING,,"Event Series","Material Event Series",
+STRING,,Roller|Bead,"Deposition Process",
+*Event Series Type, FIELDS = 1, NAME = "ABQ_AM.MaterialDeposition"
+"On and off", Unitless
+*Event Series Type, FIELDS = 1, NAME = "ABQ_AM.PowerMagnitude"
+"Power", ML2T03

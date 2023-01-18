@@ -1,0 +1,23 @@
+*Heading
+*Restart, read
+** track 18
+*Step, name=Step_L170, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L171, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L172, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L173, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L174, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L175, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L176, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L177, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L178, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L179, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local_trackEnd.inp

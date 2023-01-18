@@ -1,0 +1,9 @@
+*EVENT SERIES, NAME = "Event Series-Power" , TIME =TOTAL TIME, 
+	TYPE = "ABQ_AM.PowerMagnitude",
+	INPUT = "1_AM_laser.inp"
+**
+**
+**
+*EVENT SERIES, NAME = "Event Series-Material" , TIME =TOTAL TIME, 
+	TYPE = "ABQ_AM.MaterialDeposition",
+	INPUT = "1_AM_roller.inp"

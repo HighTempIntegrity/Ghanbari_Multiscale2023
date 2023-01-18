@@ -1,0 +1,11 @@
+*Heat Transfer, end=PERIOD, deltmx=200.
+2e-6, 5., 1e-9, 0.2, 
+*ACTIVATE ELEMENTS , ACTIVATION = "__AM-Model_Material_Source_EPA__"
+"ABQ_AM_Table_Collection-Material"
+*Output, field, frequency=1
+*Node Output
+NT
+*Output, field, frequency=9999
+*Element Output
+EACTIVE
+*End Step

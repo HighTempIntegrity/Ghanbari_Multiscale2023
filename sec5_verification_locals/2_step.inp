@@ -1,0 +1,26 @@
+*Step, name=Step-heat, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Heat Transfer, end=PERIOD, deltmx=200.
+2e-06, 0.0001, 1e-10, 0.0001,
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: BC-bottom Type: Submodel
+**>>>>>FLAG.SUBMODEL<<<<<
+Set-boundary, 11, 11
+*Activate elements, Activation="Activation.ElProgAct"
+ "Activation.Collection"
+*DFLUX
+Part-local-ins.Set-all , MBFNU , 1 , "ABQ_AM_Table_Collection-Power"
+** 
+** FIELD OUTPUT
+** 
+*Output, field, frequency=1
+*Node Output
+NT
+*Output, field, time points=TimePoints-local
+*Node Output
+NT
+*Output, field, frequency=9999
+*Element Output
+EACTIVE
+*End Step

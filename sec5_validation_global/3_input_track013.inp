@@ -1,0 +1,36 @@
+*Heading
+*Restart, read
+** layer 5
+*Step, name=Step_dep5, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Heat Transfer, end=PERIOD, deltmx=1000.
+3e-4, 4.705263, 1e-6, 0.05, 
+*ACTIVATE ELEMENTS , ACTIVATION = "__AM-Model_Material_Source_EPA__"
+"ABQ_AM_Table_Collection-Material"
+*Output, field, frequency=1
+*Node Output
+NT
+*Output, field, frequency=9999
+*Element Output
+EACTIVE
+*End Step
+** track 13
+*Step, name=Step_L120, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L121, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L122, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L123, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L124, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L125, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L126, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L127, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L128, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L129, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local_trackEnd.inp

@@ -1,0 +1,224 @@
+** layer 1
+*Step, name=Step_dep1, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Heat Transfer, end=PERIOD, deltmx=1000.
+5.0, 5.0, 1e-3, 5.0, 
+*ACTIVATE ELEMENTS , ACTIVATION = "__AM-Model_Material_Source_EPA__"
+"ABQ_AM_Table_Collection-Material"
+*DFLUX
+Part-global-instance.Set-all , MBFNU , 1 , "ABQ_AM_Table_Collection-Power"
+*FILM
+Part-global-instance.Set-all , FFS , 25 , 30e-6
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: BC-sink Type: Temperature
+*Boundary, amplitude=Amp-bottom
+Set-bottom, 11, 11, 1.
+** 
+** FIELD OUTPUT
+** 
+*Output, field, frequency=1
+*Node Output
+NT, 
+*End Step
+** track 1
+*Step, name=Step_L000, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L001, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L002, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L003, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L004, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L005, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L006, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L007, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L008, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L009, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L010, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L011, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L012, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L013, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L014, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L015, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L016, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L017, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L018, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L019, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L020, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L021, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L022, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L023, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L024, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L025, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L026, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L027, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L028, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L029, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L030, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L031, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L032, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L033, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L034, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L035, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L036, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L037, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L038, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L039, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L040, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L041, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L042, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L043, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L044, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L045, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L046, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L047, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L048, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L049, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L050, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L051, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L052, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L053, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L054, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L055, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L056, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L057, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L058, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L059, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L060, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L061, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L062, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L063, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L064, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L065, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L066, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L067, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L068, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L069, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L070, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L071, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L072, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L073, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L074, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L075, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L076, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L077, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L078, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L079, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L080, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L081, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L082, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L083, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L084, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L085, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L086, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L087, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L088, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L089, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L090, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L091, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L092, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L093, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L094, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L095, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L096, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L097, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L098, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local.inp
+*Step, name=Step_L099, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Include,input=1_step_local_trackEnd.inp

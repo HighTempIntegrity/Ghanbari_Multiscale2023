@@ -1,0 +1,34 @@
+*Step, name=Step_dep1-106, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Heat Transfer, end=PERIOD, deltmx=10000.
+0.05, 50.372950, 1e-10, 0.05, 
+*ACTIVATE ELEMENTS , ACTIVATION = "AM_Model_Material_Source"
+"ABQ_AM_Table_Collection-Material"
+*DFLUX
+AM_Model_AllBuildParts , MBFNU , 1 , "ABQ_AM_Table_Collection-Power"
+*FILM
+AM_Model_AllBuildParts , FFS , 25 , 30e-6
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: BC-sink Type: Temperature
+*Boundary, amplitude=Amp-bottom
+Set-bottom, 11, 11, 1.
+** 
+** CONTROLS
+** 
+*Controls, reset
+*Controls, parameters=time incrementation
+, , , , , 6, , 10, , , 
+, , , , , , 10., 
+, 10., , , , , , 
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, frequency=0
+** 
+** FIELD OUTPUT
+**
+*Output, field, frequency=1
+*Node Output
+NT, 
+*End Step

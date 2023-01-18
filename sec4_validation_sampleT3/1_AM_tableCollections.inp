@@ -1,0 +1,16 @@
+*TABLE COLLECTION, NAME = "ABQ_AM_Table_Collection-Material"
+*PARAMETER TABLE, TYPE = "ABQ_AM.MaterialDeposition"
+"Event Series-Material", "Roller"
+*PARAMETER TABLE, TYPE = "ABQ_AM.MaterialDeposition.Advanced"
+"Full", 0.0, 0.0, 0.0, "No", 0
+**
+**
+**
+*TABLE COLLECTION, NAME = "ABQ_AM_Table_Collection-Power"
+*PROPERTY TABLE, TYPE = "ABQ_AM.AbsorptionCoeff"
+**tempDependency = OFF
+0.48
+*PARAMETER TABLE, TYPE = "ABQ_AM.MovingHeatSource"
+"Event Series-Power", "Goldak"
+*PARAMETER TABLE, TYPE = "ABQ_AM.MovingHeatSource.Goldak"
+16, 16, 16, 0.0275, 0.03, 0.0275, 0.0275, 1, 1, 1

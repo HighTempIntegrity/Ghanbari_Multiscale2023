@@ -1,0 +1,7 @@
+*Heat Transfer, end=PERIOD, deltmx=200.
+2e-6, 1e-4, 1e-10, 1e-4, 
+*Restart, write, frequency=9999
+*Output, field, time points=TimePoints-local
+*Node Output
+NT
+*End Step

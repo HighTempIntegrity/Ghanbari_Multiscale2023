@@ -1,0 +1,36 @@
+*Heading
+*Preprint, echo=NO, model=NO, history=NO, contact=NO
+** 
+** Part and Assembly
+** 
+*Include,input=1_mesh.inp
+**
+** Amplitudes
+**
+*Include,input=1_amplitude_3tracks.inp
+** 
+** Materials
+** 
+*Include,input=1_material_Tdep.inp
+**
+** Table Types
+**
+*Include,input=1_AM_tableTypes.inp
+**
+** Event Series
+**
+*Include,input=1_AM_eventSeries.inp
+**
+** Table Collections
+**
+*Include,input=1_AM_tableCollections.inp
+** 
+** PREDEFINED FIELDS
+** 
+** Name: Predefined Field-initial-temperature   Type: Temperature
+*Initial Conditions, type=TEMPERATURE
+Part-print-ins.Set-all, 25.
+** 
+** Steps
+** 
+*Include,input=1_step.inp

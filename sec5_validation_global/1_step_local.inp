@@ -1,0 +1,6 @@
+*Heat Transfer, end=PERIOD, deltmx=10000.
+0.001429,0.001429, 1e-10, 0.001429, 
+*Output, field, time points=TimePoints-global
+*Node Output
+NT
+*End Step

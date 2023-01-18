@@ -1,0 +1,20 @@
+*PROPERTY TABLE TYPE, NAME = "ABQ_AM.AbsorptionCoeff" , PROPERTIES = 1
+"AbsorptionCoeff", Unitless
+*PARAMETER TABLE TYPE, NAME = "ABQ_AM.MovingHeatSource" , PARAMETERS = 2
+STRING,,"Event Series","Laser Event Series",
+STRING,,Concentrated|Uniform|Goldak,"Energy Distribution",
+*PARAMETER TABLE TYPE, NAME = "ABQ_AM.MovingHeatSource.Goldak" , PARAMETERS = 10
+INTEGER,,,"SubDivX",
+INTEGER,,,"SubDivY",
+INTEGER,,,"SubDivZ",
+FLOAT,,,"a",
+FLOAT,,,"b",
+FLOAT,,,"cf",
+FLOAT,,,"cr",
+FLOAT,,,"ff",
+FLOAT,,,"fr",
+FLOAT,,,"BoxSizeFactor",
+*Event Series Type, FIELDS = 1, NAME = "ABQ_AM.PowerMagnitude"
+"Power", ML2T03
+*PARAMETER TABLE TYPE,  NAME="Activation.Type", PARAMETERS = 1
+ STRING, "Message" 

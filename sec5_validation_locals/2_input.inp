@@ -1,0 +1,39 @@
+*Heading
+*Preprint, echo=NO, model=NO, history=NO, contact=NO
+** 
+** Mesh Configuration
+**
+**>>>>>FLAG.MESH<<<<<
+** 
+** Materials
+** 
+*INCLUDE,input=1_material.inp
+**
+** Time Points
+**
+*Include,input=1_timepoints.inp
+**
+** Table Types
+**
+*INCLUDE,input=1_AM_tableTypes.inp
+**
+** Event Series
+**
+*EVENT SERIES, NAME = "Event Series-Power" , TIME =TOTAL TIME, 
+	TYPE = "ABQ_AM.PowerMagnitude",
+**>>>>>FLAG.LASER<<<<<
+**
+** Table Collections
+**
+*INCLUDE,input=1_AM_tableCollections.inp
+**
+** PREDEFINED FIELDS
+** 
+**>>>>>FLAG.INITIAL_CONDITIONS<<<<<
+*Initial Conditions, type=ACTIVATION
+Set-inactive-elements,0.0
+Set-active-elements,1.0
+** 
+** Steps
+** 
+**>>>>>FLAG.STEP<<<<<

@@ -1,0 +1,12 @@
+*TABLE COLLECTION, NAME = "ABQ_AM_Table_Collection-Power"
+*PROPERTY TABLE, TYPE = "ABQ_AM.AbsorptionCoeff"
+**tempDependency = OFF
+0.5
+*PARAMETER TABLE, TYPE = "ABQ_AM.MovingHeatSource"
+"Event Series-Power", "Goldak"
+*PARAMETER TABLE, TYPE = "ABQ_AM.MovingHeatSource.Goldak"
+32, 32, 32, 0.04, 0.06, 0.06, 0.24, 0.4, 1.6, 1
+**
+*TABLE COLLECTION, NAME="Activation.Collection"
+*PARAMETER TABLE, TYPE= "Activation.Type"
+"Placeholder table collection to acivate elements."

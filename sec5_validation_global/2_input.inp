@@ -1,0 +1,62 @@
+*Heading
+*Preprint, echo=NO, model=NO, history=NO, contact=NO
+** 
+** Part and Assembly
+** 
+*Include,input=1_mesh.inp
+**
+** Amplitudes
+**
+*Include,input=1_amplitude_3tracks.inp
+** 
+** Materials
+** 
+*Include,input=1_material.inp
+**
+** Time Points
+**
+*Include,input=1_timepoints.inp
+**
+** Table Types
+**
+*Include,input=1_AM_tableTypes.inp
+**
+** Event Series
+**
+*Include,input=1_AM_eventSeries.inp
+**
+** Table Collections
+**
+*Include,input=1_AM_tableCollections.inp
+**
+** PREDEFINED FIELDS
+** 
+** Name: Initial-Temp   Type: Temperature
+*Initial Conditions, type=TEMPERATURE
+Part-global-instance.Set-all, 25.
+** 
+** Steps
+** 
+** layer 1
+*Step, name=Step_dep1, nlgeom=NO, extrapolation=PARABOLIC, inc=100000, unsymm=YES
+*Heat Transfer, end=PERIOD, deltmx=1000.
+4.658261, 4.658261, 1e-3, 4.658261, 
+*ACTIVATE ELEMENTS , ACTIVATION = "__AM-Model_Material_Source_EPA__"
+"ABQ_AM_Table_Collection-Material"
+*DFLUX
+Part-global-instance.Set-all , MBFNU , 1 , "ABQ_AM_Table_Collection-Power"
+*FILM
+Part-global-instance.Set-all , FFS , 25 , 25e-6
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: BC-sink Type: Temperature
+*Boundary, amplitude=Amp-bottom
+Set-bottom, 11, 11, 1.
+** 
+** FIELD OUTPUT
+** 
+*Output, field, frequency=1
+*Node Output
+NT, 
+*End Step
