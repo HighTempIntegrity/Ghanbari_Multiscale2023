@@ -1,6 +1,6 @@
 # Ghanbari_Multiscale2023
 
-This repository contains the input files and python scripts used to conduct the simulations presented in the following study: https://doi.org/tobedetermined
+This repository contains the input files and python scripts used to conduct the simulations presented in the following study: https://doi.org/10.1016/j.ijmecsci.2023.108583
 If you benefit from this work please include a reference to above study.
 
 ## 4. Finite element thermal modelling of LPBF
